@@ -1,0 +1,33 @@
+cloud:
+  aws:
+    credentials:
+      access-key:
+      secret-key:
+    region:
+      static: ap-northeast-1
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: siu-bucket
+
+amazon:
+  dynamodb:
+    endpoint: dynamodb.ap-northeast-1.amazonaws.com
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 200MB
+      max-request-size: 200MB
+
+server:
+  port: 9090
+  ssl:
+    enabled: true
+    key-store:
+    key-store-password:
+    key-store-type:
+    key-alias:
